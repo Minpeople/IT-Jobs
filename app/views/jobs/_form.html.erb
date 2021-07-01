@@ -1,0 +1,8 @@
+<h1>New job </h1>
+<%= simple_form_for @job  do |f| %>
+    <%= f.input :title, label: "Job Title" %>
+    <%= f.input :description, label: "Job description" %>
+    <%= f.input :company, label: "Your company" %>
+    <%= f.input :url, label: "Link to Job" %>
+    <%= f.button :submit %>
+<% end %>
