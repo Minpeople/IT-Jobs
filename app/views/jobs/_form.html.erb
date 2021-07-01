@@ -1,10 +1,10 @@
 <h1>New job </h1>
 
 <%= simple_form_for @job  do |f| %>
-    <%= f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a category"}%>
-    <%= f.input :title, label: "Job Title" %>
-    <%= f.input :description, label: "Job description" %>
-    <%= f.input :company, label: "Your company" %>
-    <%= f.input :url, label: "Link to Job" %>
+    <%= f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a category"}, input_html: { class: "dropdown-toggler"} %>
+    <%= f.input :title, label: "Job Title" , input_html: { class: "form-control"}%>
+    <%= f.input :description, label: "Job description", input_html: { class: "form-control"} %>
+    <%= f.input :company, label: "Your company", input_html: { class: "form-control"} %>
+    <%= f.input :url, label: "Link to Job", input_html: { class: "form-control"} %>
     <%= f.button :submit %>
 <% end %>
