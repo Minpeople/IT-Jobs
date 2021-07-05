@@ -1,5 +1,11 @@
 # README
 
+https://imgur.com/a/CFxGn39
+![Alt text](relative/path/to/https://imgur.com/a/CFxGn39 "Screenshoot")
+![Screenshoot of my website](https://imgur.com/a/CFxGn39)
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
